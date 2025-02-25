@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFord - Home page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1dfaf22495.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <img src="edu_img/logo.PNG"  width="50px"   alt="logo">
+         <div class="navlinks" id="navlinks">
+            <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+           </div>
+
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        
+        
+        </nav>
+        <div class="textbox">
+            <h1>World  Biggest University</h1>
+            <p>Making website is now one of the easiest in the world.You just need to learn 
+                HTML, CSS, JavaScripts and you good to go.
+            </p>
+            .
+        </div>
+    </section>
+
+    <!--Course Start-->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+        <div class="row">
+            <div class="courseCol">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam, sed libero explicabo debitis et esse fugiat sunt laudantium quo adipisci dolore sint!</p>
+
+            </div>
+
+       
+           <div class="courseCol">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi, facilis ducimus iusto nobis magni qui maxime repellat nostrum quasi quis illo quibusdam</p>
+                    
+            </div>
+
+        
+            <div class="courseCol">
+                <h3>Post Graduate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium dolorum repudiandae, aut vero quo est soluta nihil natus doloremque quae explicabo voluptatibus</p>     
+          </div>
+        </div>               
+    </section>
+    <!--Course End-->
+
+     <!-- Campus -->
+     <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <div class="row">
+            <div class="campusCol">
+                <img src="./edu_img/london.PNG" alt="london">
+                <div class="base">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+
+            <!--campus 2-->
+            <div class="campusCol">
+                <img src="./edu_img/newyork.PNG" alt="newyork">
+                <div class="base">
+                    <h3>NEW YORK</h3>
+                </div>    
+            </div>
+
+            <!-- campus 3-->
+            <div class="campusCol">
+                <img src="./edu_img/washington.PNG" alt="washington">
+                <div class="base">
+                    <h3>WASHINGTON</h3>
+                </div>    
+            </div>
+        </div>
+     </section>
+
+     <!-- Facilities-->
+      <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <!--facility 1-->
+            <div class="facilityCol">
+                <img src="./edu_img/Library.PNG" width="300" alt="library">
+                <h3>Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+
+            <!--facility 2-->
+            <div class="facilityCol">
+                <img src="./edu_img/basketball.PNG" width="300"   alt="gym">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+
+            <!--facility 3-->
+            <div class="facilityCol">
+                <img src="./edu_img/cafeteria.PNG" width="300"   alt="sports centre">
+                <h3>Tasty and Healty Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+        </div>
+      </section>
+       <!--Facilities End-->
+
+
+      <!--Footer Start-->
+      <section class="footer">
+        <p>  &copy;2025 EduFord. All rights reserved</p>
+        <div class="social"></div>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+      </section>
+       <!--Footer End-->
+
+      
+    <script>
+        var menu = document.getElementById("navLinks");
+        if (window.matchMedia("(min-width: 700px)").matches) {
+          menu.style.display = "block"; // Show menu
+      } else {
+        menu.style.display = "none"; // Hide menu
+  }
+
+       function showMenu() {
+           document.querySelector('.navLinks').style.display = 'block';
+       }
+       function hideMenu() {
+           document.querySelector('.navLinks').style.display = 'none';
+       }
+   </script>
+    
+</body>
+</html>
